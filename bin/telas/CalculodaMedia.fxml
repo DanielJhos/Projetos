@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TelaMédia">
+   <center>
+      <VBox prefHeight="398.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Aluno(a)">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow color="#0030ff" height="0.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#0015ff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <TextField fx:id="txtAluno" style="-fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label text="Nota 1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#000dff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNota1" style="-fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="350.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label text="Nota 2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#000dff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNota2" focusTraversable="false" style="-fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="350.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label text="Nota 3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#000dff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtNota3" style="-fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="350.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#calculaMedia" prefHeight="48.0" prefWidth="185.0" style="-fx-background-radius: 10;" text="Calcular">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.03" color="#0f0061" height="68.2" radius="32.1175" width="62.27" />
+               </effect>
+            </Button>
+            <Label fx:id="lblMedia" alignment="CENTER" contentDisplay="CENTER" text="Média:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow height="0.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#3c00ff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblSituacao" text="Situação:">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+                     <bumpInput>
+                        <Shadow height="0.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="0.0" color="#3c00ff" elevation="140.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Cálculo da Média" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" surfaceScale="0.35">
+               <bumpInput>
+                  <Shadow height="1.0" radius="0.0" width="0.0" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="0.0" color="#005eff" elevation="140.0" />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </top>
+</BorderPane>
